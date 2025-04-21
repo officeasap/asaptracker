@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASAP Tracker – Live Flight Status & Updates</title>
+    <meta name="description" content="Real-time flight tracking, status updates, and alerts for all your aviation needs" />
+    <meta name="author" content="Asap Tracker" />
+
+    <meta property="og:title" content="ASAP Tracker - Real-Time Flight Services" />
+    <meta property="og:description" content="Track flights, check schedules, monitor delays, and stay updated with global weather forecasts - all in one place." />
+    <meta property="og:type" content="website" />
+    <!--<meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />-->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AsapTracker_dev" />
+   <!-- <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />-->
+    
+    <!-- Service worker registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(function(error) {
+              console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
