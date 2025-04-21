@@ -1,0 +1,162 @@
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #A80000aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #A80000aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: #1A1A1A;
+  border: 2px solid #8B0000;
+  text-align: left;
+}
+
+.read-the-docs {
+  color: #8B0000;
+}
+
+/* Rating circles */
+.rating-3-8 {
+  background-color: #8B0000;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  color: white;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-4-7 {
+  background-color: #A80000;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  color: white;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Play button styling */
+.play-button-icon {
+  color: #8B0000;
+}
+
+/* Code styling */
+.code-container {
+  background-color: #1A1A1A;
+  border-radius: 8px;
+  padding: 16px;
+  border: 2px solid #8B0000;
+  text-align: left;
+}
+
+.code-text {
+  color: #8B0000;
+}
+
+.code-text-secondary {
+  color: #A80000;
+}
+
+/* Red glow effect */
+.red-glow {
+  box-shadow: 0 0 8px #A80000;
+}
+
+/* Button and menu item styling */
+.menu-item, .button {
+  background-color: #8B0000;
+  color: white;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover, .button:hover {
+  background-color: #A80000;
+  box-shadow: 0 0 8px #A80000;
+}
+
+.nav-item {
+  background-color: #8B0000;
+  color: white;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #A80000;
+  box-shadow: 0 0 8px #A80000;
+}
+
+/* Footer styling */
+.footer-link {
+  color: #FFFFFF;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-heading {
+  color: #8B0000;
+  font-weight: 600;
+}
+
+.footer-icon {
+  color: #8B0000;
+}
+
+.footer-subscribe-button {
+  background-color: #8B0000;
+  color: #FFFFFF;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.footer-subscribe-button:hover {
+  background-color: #A80000;
+  box-shadow: 0 0 8px #A80000;
+}
+
+.footer-input {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  border: 1px solid #444444;
+}
+
+.footer-input::placeholder {
+  color: #B3B3B3;
+}
